@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(127, 127, 127);
+}
+#ilia {
+    text-shadow: 2px 2px 2px red;
+}
+.par {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 1px 1px rgb(173, 255, 118);
+    font-weight: 800;
+}
+.par1 {
+    text-shadow: 4px 4px 1px rgb(255, 255, 0);
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#act:active{
+    color: yellow;
+}
+#act1:hover{
+    color: red;
+}
+#act2:hover{
+    font-size: 50px;
+}
