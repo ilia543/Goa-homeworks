@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+#div1 {
+    border: 10px solid;
+    background-color: aqua;
+    border-color: yellow;
+    width: 50%;
+    height: auto;
+}
+#p1 {
+    text-align: center;
+    text-shadow: 1px 2px 1px red;
+    size: 20px;
+}
+#p2 {
+    text-align: right;
+    text-shadow: 3px 1px 1px rgb(0, 184, 0);
+}
+#p3 {
+    text-shadow: 1px 1px 1px blue;
+}
+#div2 {
+    background-color: white;
+    border: 5px solid rgb(0, 234, 255);
+    width: 30%;
+    height: 50%;
+    float: right;
+}

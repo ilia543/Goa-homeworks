@@ -14,7 +14,7 @@ body {
     font-style: italic;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#act:active{
+#act:hover{
     color: yellow;
 }
 #act1:hover{
