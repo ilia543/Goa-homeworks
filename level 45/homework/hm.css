@@ -1,0 +1,12 @@
+#dvp {
+    border: 2px solid black;
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dv img {
+    border-radius: 50%;
+}

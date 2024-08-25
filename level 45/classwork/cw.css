@@ -1,0 +1,94 @@
+#rd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rad {
+    background-color: rgb(0, 82, 0);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rad1 {
+    background-color: rgb(17, 128, 17);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rad2 {
+    background-color: rgb(44, 128, 44);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rad3 {
+    background-color: rgb(72, 128, 72);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rad4 {
+    background-color: rgb(95, 127, 95);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dv {
+    background-color: rgb(136, 136, 136);
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.dvv {
+    background-color: cyan;
+    border: 2px solid red;
+    width: 50px;
+    height: 50px;
+}
+    /* 
+        flex-direction _ით ვაკონტროლებთ რომელ ღერძზე უნდა იყოს ელემენტები განლაგებული
+
+        მთავარი ღერძი - არის ღერძი სადაც განლაგებულია ელემენტები
+        გადამკვეთი ღერძი - არის ღერძი რომელიც კვეთავს მთავარ ღერძს
+
+        row - ელემენტები განლაგებული იქნება x ღერძზე ერთმანეთის გვერდიგვერდ
+        column - ელემენტები განლაგებულნი იქნებიან y ღერძზე ერთმანეთს ქვემოთ
+    */
+
+    /* 
+        justify-content - ცვლის მთავარი ღერძის კორდინატებს
+
+        flex-end გადააქვს მთავარი ღერძის ბოლოში
+        flex-start გადააქვს მთავარი ღერძის დასაწყისში
+        center გადააქვს ცენტრში
+        space-between სრული დაშორება ელემენტებს შორის
+        space-around კიდებსა და ელემენტებს შორის დაშორება არის სხვადასხვა
+        space-evenly კიდებსა და ელემენტებს შორის დაშორება არის ზუსტი
+    */
+
+    /* 
+        align-items - ვცვლით გადამკვეთი ღერძის კორდინატებს
+
+        flex-end - გადააქვს გადამკვეთი ღერძის ბოლოში
+        flex-start - გადააქვს გადამკვეთი ღერძის დასაწყიში
+        center - გადააქვს გადამკვეთი ღერძის ცენტრში
+    */

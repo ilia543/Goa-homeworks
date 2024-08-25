@@ -1,0 +1,13 @@
+#bgdiv img {
+    height: 200px;
+    width: 200px;
+}
+#bgdiv {
+    border: 2px solid black;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
