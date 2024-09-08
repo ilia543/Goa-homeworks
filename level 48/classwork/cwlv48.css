@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(138, 138, 138);
+    height: 2000px;
+}
+#bar {
+    position: fixed;
+    width: 60%;
+    height: 40px;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 2px 2px 1px red;
+    color: white;
+    border-radius: 20px;
+}
+#p1 {
+    position: relative;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#p2 {
+    position: relative;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 105px;
+}
+#p3 {
+    position: relative;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 170px;
+}
+#butt1 {
+    border: none;
+    background-color: aqua;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 235px;
+}
+#p4 {
+    position: relative;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 700px;
+    font-size: 20px;
+}
+#bar:hover {
+    box-shadow: none;
+}
