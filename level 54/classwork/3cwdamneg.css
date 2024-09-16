@@ -1,0 +1,30 @@
+#divomg {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: blackdiv;
+    animation-direction: unset;
+}
+@keyframes blackdiv {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: cyan;
+    }
+    40% {
+        width: 400px;
+        height: 400px;
+    }
+    60%{
+        background-color: green;
+    }
+    80%{
+        background-color: yellow;
+    }
+    100% {
+        background-color: purple;
+    }
+}

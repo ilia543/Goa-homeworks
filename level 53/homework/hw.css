@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+#sigma {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: background-color 10s, transform 3s;
+}
+#sigma:hover {
+    background-color: cyan;
+    transform: rotate(60deg);
+}
+#sigma2 {
+    transition-property:transform, background-color ;    
+    transition-duration: 0.5s, 4s ;
+    transition-timing-function: ease-in-out ;    
+    transition-delay: 2s,0,5 ;
+    transition: transform ease-in-out 0.5s 2s, background-color 10s;
+}

@@ -1,0 +1,35 @@
+#animation123 {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation-name: nigga;
+}
+#animation123:hover{
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;    
+}
+#animation123:active {
+    animation: none;
+}
+@keyframes nigga {
+0% {
+    background-color: red;
+}
+20% {
+    background-color: cyan;
+}
+40% {
+    width: 400px;
+    height: 400px;
+}
+60%{
+    background-color: green;
+}
+80%{
+    background-color: yellow;
+}
+100% {
+    background-color: purple;
+}
+}

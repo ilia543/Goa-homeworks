@@ -1,0 +1,30 @@
+#divbar {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+}
+#webname {
+    position: absolute;
+    left: 20px;
+}
+#home {
+    position: absolute;
+    left: 660px;
+}
+#about {
+    position: absolute;
+    left: 760px;
+}
+#contact {
+    position: absolute;
+    left: 860px;
+}
+#reg {
+    position: absolute;
+    left: 1400px;
+    top: 25px;
+}
