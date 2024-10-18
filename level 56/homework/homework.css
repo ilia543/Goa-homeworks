@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(130, 130, 130);
+}
+.buttons {
+    position: absolute;
+    top: 600px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: cyan;
+    width: 60px;
+    height: 30px;
+    font-weight: 700;
+    box-shadow: 2px 2px 0px red;
+    transition: 0.5s;
+}
+.buttons:hover {
+    box-shadow: none;
+    background-color: red;
+    color: cyan;
+}
+#but0 {
+    left: 70px;
+}
+#but1 {
+    left: 140px;
+}
+#but2 {
+    left: 210px;
+}
+#but3 {
+    left: 280px;
+}
+#but4 {
+    left: 350px;
+}
+#but5 {
+    left: 420px;
+}
+#but6 {
+    left: 490px;
+}
+#but7 {
+    left: 560px;
+}
+#but8 {
+    left: 630px;
+}
+#but9 {
+    left: 700px;
+}
