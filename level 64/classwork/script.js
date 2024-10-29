@@ -22,14 +22,13 @@ function valiuDateForm() {
     // console.log(name);
     // console.log(email);
     // console.log(pass);
-    if (name.value === '' || email.value === '' || pass.value === '') {
+    if (name === '' || email === '' || pass === '') {
         alert("pleas fill all boxes");
-        return;
     } 
     else {
-        console.log(name.value);
-        console.log(email.value);
-        console.log(pass.value);
+        alert(name);
+        alert(email);
+        alert(pass);
     }
 }
 
