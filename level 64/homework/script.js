@@ -8,12 +8,12 @@ function register(){
     const radio1 = form.elements.radio1.value;
     const radio2 = form.elements.radio2.value;
 
-    if (name === "" || email === "" || password === "" || length(password) <= 8){
+    if (name === "" || email === "" || password === "" || password.length <= 8){
         alert("empty")
     }
-    // else if (length(password) <= 8){
-    //     alert("password is too short");
-    // }
+    else if (password.length <= 8){
+        alert("password is too short");
+    }
     else{
         alert("your inpormation " + name + " " + email + " " + password);
     }
