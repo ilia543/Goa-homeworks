@@ -1,0 +1,2 @@
+homework = False
+# no homework

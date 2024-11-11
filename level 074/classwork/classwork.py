@@ -1,0 +1,2 @@
+claswork = False
+# no classwork
