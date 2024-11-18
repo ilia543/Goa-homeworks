@@ -1,0 +1,32 @@
+#goa{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-iteration-count: infinite;
+    animation-name: goa;
+    animation-direction: unset;
+    animation-duration: 10s;
+}
+@keyframes goa {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 100%;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+    }
+    75% {
+        top: 100%;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
