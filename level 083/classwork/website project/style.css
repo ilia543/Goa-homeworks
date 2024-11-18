@@ -59,3 +59,7 @@
 #butt:active{
     box-shadow: none;
 }
+#tipsProcent{
+    position: absolute;
+    top: 100px;
+}

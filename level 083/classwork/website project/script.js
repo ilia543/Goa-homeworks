@@ -6,6 +6,8 @@ let tipsProcent = document.getElementById("tipsProcent");
 
 butt.addEventListener("click", function(){
     let paragraph = document.createElement('paragraph');
+    let br = document.createElement('br')
+    
     let money1 = money.value;
     let tip1 = tip.value;
 
@@ -18,6 +20,8 @@ butt.addEventListener("click", function(){
     paragraph.style.fontSize = "30px";
 
     tipsProcent.appendChild(paragraph);
-
-    todo.value = "";
+    tipsProcent.appendChild(br);
+    
+    money.value = "";
+    tip.value = "";
 })
