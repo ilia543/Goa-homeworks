@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            height: 700px;
+            background-color: rgb(255, 240, 212);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div{
+            display: flex;
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        #div1{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(255, 0, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        #div3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 255, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        #div4{
+            width: 50px;
+            height: 50px;
+            background-color: cyan;
+            border-radius: 50%;
+        }
+    </style>
+    <div class="div">
+        <div id="div1">
+            <div id="div2">
+                <div id="div3">
+                    <div id="div4">
+                        <!-- <button id="butt"></button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.getElementsByClassName("div")[0].addEventListener("click", function(){
+            console.log("0")
+        })
+        document.getElementById("div1").addEventListener("click", function(){
+            console.log("1")
+        })
+        document.getElementById("div2").addEventListener("click", function(){
+            console.log("2")
+        })
+        document.getElementById("div3").addEventListener("click", function(){
+            console.log("3")
+        })
+        document.getElementById("div4").addEventListener("click", function(){
+            console.log("4")
+        })
+    </script>
+</body>
+</html>

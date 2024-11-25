@@ -1,0 +1,1 @@
+print("es davaleba adre gvqonda")
