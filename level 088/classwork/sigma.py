@@ -1,0 +1,1 @@
+print("codvarsebi gvqonda da yvel codwarsi gavakete")
