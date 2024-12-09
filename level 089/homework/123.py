@@ -1,0 +1,1 @@
+print("88 da 89 levelebshi ver gaverkvie romeli romlis davaleba iyo radgan cxrili areulia")

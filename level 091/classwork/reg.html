@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" action="" onsubmit="">
+        <input type="text" name="name" id="name" placeholder="enter name : "><br><br>
+        <input type="email" name="email" id="email" placeholder="enter email :"><br><br>
+        <input type="password" name="password" id="password" placeholder="enter password"><br><br>
+        <input type="password" name="password1" id="password1" placeholder="repeat password"><br><br>
+        <input type="number" name="number" id="number" placeholder="enter age : "><br><br>
+        <input type="submit" name="submit" id="submit">
+    </form>
+
+    <script>
+        
+        let rname = "ilia"
+        let remail = "mrmainxpx@gmail.com"
+        let rpassword = "goachad"
+        let rage = 16
+        
+
+        let form = document.getElementById("form")
+
+        let name = document.getElementById("name")
+        let email = document.getElementById("email")
+
+        let password = document.getElementById("password")
+        let password2 = document.getElementById("password2")
+
+        let age = document.getElementById("age")
+        let submt = document.getElementById("submit")
+
+        submt.addEventListener("click", function(){
+            if(name != rname){
+                alert('no name')
+            }
+            if(password != rpassword){
+                alert('no password')
+            }
+            if(password2 != password){
+                alert('no match password')
+            }
+            if(email != remail){
+                alert('no email')
+            }
+            if(Number(age) != rage){
+                alert('no age')
+            }
+        })
+    </script>
+</body>
+</html>
