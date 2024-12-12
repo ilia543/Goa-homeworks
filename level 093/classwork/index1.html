@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        #divcolor{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 2px 0px yellow;
+        }
+    </style>
+</head>
+<body>
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <button id="restart">restart</button>
+    <p id="lastnumb">0</p>
+    <div id="divcolor"></div>
+
+
+
+
+
+    <script>
+        let lastnumb = document.getElementById("lastnumb");
+        let plus = document.getElementById("plus");
+        let minus = document.getElementById("minus");
+        let restart = document.getElementById("restart");
+        let divcolor = document.getElementById("divcolor");
+        let count = 0;
+        
+        function skibidisandro(){
+            if (count > 0){
+                divcolor.style.backgroundColor = "green";
+                // document.body.style.backgroundColor = "green" 
+            }
+            else if (count < 0){
+                divcolor.style.backgroundColor = "red";
+            }
+            else{
+                divcolor.style.backgroundColor = "white";
+            }
+        }
+        
+        plus.onclick = function(){
+            count ++;
+            lastnumb.textContent = count;
+            skibidisandro();
+        }
+        minus.onclick = function(){
+            count --;
+            lastnumb.textContent = count;
+            skibidisandro();
+        }
+        restart.onclick = function(){
+            count = 0;
+            lastnumb.textContent = count;
+            skibidisandro();
+        }
+        </script>
+</body>
+</html>
