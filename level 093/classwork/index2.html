@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <input type="text" name="numb_inp" id="numb_inp">
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <button id="restart">restart</button>
+    <p id="numb">0</p>
+
+    <script>
+        let numb_inp = document.getElementById("numb_inp");
+        let plus = document.getElementById("plus");
+        let minus = document.getElementById("minus");
+        let restart = document.getElementById("restart");
+        let numb = document.getElementById("numb");
+        let count = numb_inp.value;
+
+        restart.onclick = function(){
+            if(count === 0 && numb.value === 0){
+                alert("number is 0");
+            }
+            else{
+                count = 0;
+                numb.textContent = count
+            }
+        }
+        plus.onclick = function(){
+            if(Number(numb_inp) <= 100){
+                console.log(count)
+            }
+        }
+    </script>
+</body>
+</html>
