@@ -34,6 +34,7 @@ if (BiggerFinger) {
             BiggerFingerCost *= 2;
             CoinCountSt += 1; 
             gold.textContent = countGolds;
+            BiggerFinger.textContent = "Bigger Finger " + String(BiggerFingerCost)
         }
     };
 }
@@ -47,6 +48,7 @@ if (BetterMines) {
             BetterMinesCost *= 2;
             GoldCountSt += 1;
             coins.textContent = countCoins;
+            BetterMines.textContent = "Better Mines " + String(BetterMinesCost)
         }
     };
 }
@@ -60,6 +62,7 @@ if (DoubleCookies) {
             DoubleCookiesCost *= 2;
             CoinCountSt *= 2;
             gold.textContent = countGolds;
+            DoubleCookies.textContent = "Double Cookies " + String(DoubleCookiesCost)
         }
     };
 }

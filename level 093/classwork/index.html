@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+
+        <h1>Counter: <span id="counter">0</span></h1>
+        <input type="number" id="step" placeholder="Enter number" />
+
+
+        <button id="add">Add</button>
+        <button id="subtract">Subtract</button>
+        <button id="reset">Reset</button>
+
+    </div>
+
+
+    <script>
+        const counterDisplay = document.getElementById("counter");
+        const stepInput = document.getElementById("step");
+        const addButton = document.getElementById("add");
+        const subtractButton = document.getElementById("subtract");
+        const resetButton = document.getElementById("reset");
+
+        let counter = 0;
+        let resetCount = 0;
+
+        function updateCounter(value) {
+            if (value < -100 || value > 100) {
+                alert("Cannot add or subtract more than 100.");
+                return;
+            }
+            counter += value;
+            counterDisplay.textContent = counter;
+        }
+
+        addButton.addEventListener("click", () => {
+            const step = parseInt(stepInput.value) || 0;
+            updateCounter(step);
+        });
+
+        subtractButton.addEventListener("click", () => {
+            const step = parseInt(stepInput.value) || 0;
+            updateCounter(-step);
+        });
+
+        resetButton.addEventListener("click", () => {
+            if (resetCount >= 1) {
+                alert("Cannot reset more than once.");
+                return;
+            }
+            counter = 0;
+            resetCount++;
+            counterDisplay.textContent = counter;
+        });
+    </script>
+</body>
+</html>
