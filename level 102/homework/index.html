@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  შევქმნათ ქაუნთერი, ( ინკრემენტაციის, დიკრემენტაციის და დარესტარტების ღილაკი ), თუმცა გამოვყენოთ localStorage - რიცხვის დასამახსოვრებლად. -->
+
+    <button id="clickCount">click +1 count</button>
+    <p id="countNumb">0  x</p>
+
+    <script>
+
+        let clickCount = document.getElementById("clickCount");
+
+        let countNumb = document.getElementById("countNumb");
+
+        let count = 0;
+        count = Number(localStorage.getItem("count"));
+
+        clickCount.addEventListener('click', function () {
+            count ++;
+            localStorage.setItem("count", count);
+            countNumb.textContent = count;
+        })
+
+    </script>
+</body>
+</html>
