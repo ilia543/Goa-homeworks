@@ -29,7 +29,7 @@
 
     
     <script>
-        // Initial Setup
+
         let userName = localStorage.getItem('userName');
         let score = parseInt(localStorage.getItem('score')) || 0;
         let maxNumber = parseInt(localStorage.getItem('maxNumber')) || 2;
@@ -47,13 +47,13 @@
             }
         }
 
-        // Update Background Color
+
         function updateBackgroundColor() {
             const color = document.getElementById('colorPicker').value;
             document.body.style.backgroundColor = color;
         }
 
-        // Check Guess
+
         function checkGuess() {
             const userGuess = parseInt(document.getElementById('numberInput').value);
             if (userGuess === randomNumber) {
@@ -69,13 +69,13 @@
             updateGameInfo();
         }
 
-        // Update Game Info
+
         function updateGameInfo() {
             document.getElementById('userNameDisplay').innerText = `სახელი: ${userName}`;
             document.getElementById('scoreDisplay').innerText = `ქულა: ${score}`;
         }
 
-        // Initial Render
+
         window.onload = function () {
             updateGameInfo();
         };

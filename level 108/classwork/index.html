@@ -7,5 +7,27 @@
 </head>
 <body>
     <!-- css ბათლი გავაკეთე მაგრამ სქრინის გადაღება დამავიწყდა და მერე აღარ იყო შენახული ვერ მივვდი რატო :( -->
+
+
+    <script>
+        function firstNonRepeatingElement(input) {
+        const charCount = {};
+
+        for (const char of input) {
+            charCount[char] = (charCount[char] || 0) + 1;
+        }
+
+        for (const char of input) {
+            if (charCount[char] === 1) {
+            return char;
+            }
+        }
+
+        return false;
+        }
+        console.log(firstNonRepeatingElement("hannah"));
+        console.log(firstNonRepeatingElement("abbia"));
+
+    </script>
 </body>
 </html>

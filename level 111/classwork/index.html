@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Clicker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e7e7e7;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="clickButton">Click me!</button>
+    <p id="clickCount">Clicks: 0</p>
+
+    <script>
+        const button = document.getElementById('clickButton');
+        const paragraph = document.getElementById('clickCount');
+
+
+        let count = localStorage.getItem('clickCount');
+        paragraph.textContent = `Clicks: ${count}`;
+
+        button.addEventListener('click', () => {
+            count++;
+            paragraph.textContent = `Clicks: ${count}`;
+
+            localStorage.setItem('clickCount', count);
+        });
+    </script>
+</body>
+</html>
