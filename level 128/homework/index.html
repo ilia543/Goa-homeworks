@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Image Generator</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #image-container {
+            margin-top: 20px;
+            height: 300px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Animal Image Generator</h1>
+    
+    <label><input type="checkbox" id="cat"> კატა</label>
+    <label><input type="checkbox" id="dog"> ძაღლი</label>
+    <label><input type="checkbox" id="fox"> მელა</label>
+
+    <br><br>
+
+    <button onclick="generateImage()">Generate</button>
+
+    <div id="image-container"></div>
+
+    <script>
+        async function generateImage() {
+            const catCheckbox = document.getElementById('cat').checked;
+            const dogCheckbox = document.getElementById('dog').checked;
+            const foxCheckbox = document.getElementById('fox').checked;
+
+            const imageContainer = document.getElementById('image-container');
+            imageContainer.innerHTML = '';
+
+            if (catCheckbox) {
+                const catResponse = await fetch('https://api.thecatapi.com/v1/images/search');
+                const catData = await catResponse.json();
+                const catImage = document.createElement('img');
+                catImage.src = catData[0].url;
+                imageContainer.appendChild(catImage);
+            }
+
+            if (dogCheckbox) {
+                const dogResponse = await fetch('https://dog.ceo/api/breeds/image/random');
+                const dogData = await dogResponse.json();
+                const dogImage = document.createElement('img');
+                dogImage.src = dogData.message;
+                imageContainer.appendChild(dogImage);
+            }
+
+            if (foxCheckbox) {
+                const foxResponse = await fetch('https://randomfox.ca/floof/');
+                const foxData = await foxResponse.json();
+                const foxImage = document.createElement('img');
+                foxImage.src = foxData.image;
+                imageContainer.appendChild(foxImage);
+            }
+        }
+    </script>
+
+</body>
+</html>

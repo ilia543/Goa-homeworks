@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Fetcher</title>
+</head>
+<body>
+    <div class="container">
+        <p id="joke">Loading joke...</p>
+        <button onclick="fetchJoke()">Get Another Joke</button>
+    </div>
+    
+    <script>
+        async function fetchJoke() {
+            try {
+                const response = await fetch("https://v2.jokeapi.dev/joke/Any?safe-mode");
+                const data = await response.json();
+                const joke = data.joke;
+                document.getElementById("joke").textContent = joke;
+            } catch (error) {
+                document.getElementById("joke").textContent = "Failed to load joke. Try again!";
+            }
+        }
+        fetchJoke();
+    </script>
+</body>
+</html>

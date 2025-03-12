@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label><input type="checkbox" id="joke"> ხუმრობა</label>
+    <label><input type="checkbox" id="advice"> რჩევა</label>
+
+    <br><br>
+
+    <button onclick="func1()">Generate</button>
+
+    <div id="txtContainer">
+        <p id="joketxt"></p>
+        <p id="advicetxt"></p>
+    </div>
+
+
+    <script>
+        let joketxt = document.getElementById("joketxt");
+        let advicetxt = document.getElementById("advicetxt");
+
+
+        async function func1() {
+            let joke = document.getElementById("joke").checked;
+            let advice = document.getElementById("advice").checked;
+
+            if(joke){
+                let res = await fetch('https://v2.jokeapi.dev/joke/Any?safe-mode');
+                let obj = await res.json();
+                joketxt.textContent = obj.type === "single" ? obj.joke : `${obj.setup} - ${obj.delivery}`
+            }
+
+
+            if(advice){
+                let res = await fetch('https://api.adviceslip.com/advice');
+                let obj = await res.json();
+                advicetxt.textContent = obj.type === "single" ? obj.slip.advice : `${obj.slip.advice} - ${obj.slip.advice}`
+            }
+        }
+    </script>
+</body>
+</html>
