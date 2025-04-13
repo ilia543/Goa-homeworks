@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>მარტივი კალკულატორი</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f3f4f6;
+      padding: 30px;
+    }
+    .calculator {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h2>კალკულატორი</h2>
+    <form id="calc-form">
+      <input type="number" id="number1" placeholder="პირველი რიცხვი" required />
+      <select id="operator">
+        <option value="+">დამატება (+)</option>
+        <option value="-">გამოკლება (-)</option>
+        <option value="*">გამრავლება (*)</option>
+        <option value="/">გაყოფა (/)</option>
+      </select>
+      <input type="number" id="number2" placeholder="მეორე რიცხვი" required />
+      <button type="submit">გამოთვლა</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script type="module" src="./Main.js"></script>
+</body>
+</html>
